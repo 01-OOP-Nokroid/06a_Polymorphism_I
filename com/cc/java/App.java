@@ -9,20 +9,31 @@ public class App {
         Drone drone = new Drone();
 
         // 1. Iteration Super-Subklassen //
-        output(queen.doYourJob());
-        output(queen.fly());
-        output("----------------");
-
-        output(worker.doYourJob());
-        output(worker.fly());
-        output("----------------");
-
-        output(drone.doYourJob());
-        output(drone.fly());
+        
+        pollObj(queen);
+        pollObj(worker);
+        pollObj(drone);
     }
-
+    // 2. Iteration Overloading // 
+    private static void pollObj(Queen obj)
+    {
+         output(obj.doYourJob());
+         output(obj.fly());
+         output("----------------");
+    }
    
-   
+    private static void pollObj(Worker obj)
+    {
+         output(obj.doYourJob());
+         output(obj.fly());
+         output("----------------");
+    }
+    private static void pollObj(Drone obj)
+    {
+         output(obj.doYourJob());
+         output(obj.fly());
+         output("----------------");
+    }
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
