@@ -14,7 +14,13 @@ public class App
         pollObj(queen);
         pollObj(worker);
         pollObj(drone);
+
+        // Das sollte eigentlich nicht gehen! //
+        HoneyBee bee = new HoneyBee();
+        pollObj(bee);
     }
+
+
     // 3. Iteration Polymorphie // 
     private static void pollObj(HoneyBee obj)
     {
