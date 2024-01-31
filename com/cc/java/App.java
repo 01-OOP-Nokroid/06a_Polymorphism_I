@@ -1,6 +1,7 @@
 package com.cc.java;
 
-public class App {
+public class App
+{
     
     public static void main(String[] args)
     {
@@ -22,7 +23,6 @@ public class App {
          output("----------------");
     }
    
-    }
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
